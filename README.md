@@ -20,6 +20,9 @@ term as the last argument at the command line:
 ruby scanner.rb --zone_file_directory=/path/to/zone/files/ watch_term
 ```
 
+## Bundler
+To install the gems, run `bundle install`
+
 ## Example Data
 We include some example data. To try it out, run:
 ```bash
@@ -60,7 +63,15 @@ Also don't forget to change the name of the class! We have logic that will autom
 matcher if you name the file <your_name>_matcher.rb and stick it in lib/matchers/
 
 ## How to get zone files
-Zone files can be retrieved from ICANN's CZDS
+Zone files can be retrieved from ICANN's CZDS: https://czds.icann.org/help#zone-files
 
 ## Running in Docker
-TODO
+The project comes with a Dockerfile for simple cross-platform execution. To build the image:
+```bash
+docker build -t domain-scanner .
+```
+
+From there, you can run the tool by mapping in a directory of zone files:
+```bash
+docker run -it -v /path/to/zone/files/:/opt/zone_files/ domain-scanner ruby /opt/domain-scanner/scanner.rb -z /opt/zone_files/ search_term
+```

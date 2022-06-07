@@ -1,4 +1,5 @@
 require_relative '../logger'
+
 # Class that manages all of the matchers
 class MatcherManager
 
