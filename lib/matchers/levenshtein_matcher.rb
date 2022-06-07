@@ -1,5 +1,5 @@
 require "damerau-levenshtein"
-require_relative 'matcher'
+require_relative './matcher'
 
 # Checks if the suspect domain matches the monitored domain using Levenshtein Distance
 class LevenshteinMatcher < Matcher

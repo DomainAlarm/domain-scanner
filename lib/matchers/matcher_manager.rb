@@ -1,3 +1,4 @@
+require_relative '../logger'
 # Class that manages all of the matchers
 class MatcherManager
 
@@ -32,10 +33,12 @@ class MatcherManager
     hits
   end
 
-end
+  def self.load_all_matchers
+    # Require all *_matcher.rb files in this directory automatically
+    Dir.glob(File.join(File.dirname(__FILE__), "*_matcher.rb")).each do |x|
+      Logger.log("Adding #{x} to MatcherManager")
+      require x
+    end
+  end
 
-# Require all *_matcher.rb files in this directory automatically
-Dir.glob(File.join(File.dirname(__FILE__), "*_matcher.rb")).each do |x|
-  Logger.log("Adding #{x} to MatcherManager")
-  require x
 end

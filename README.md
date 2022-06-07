@@ -20,6 +20,12 @@ term as the last argument at the command line:
 ruby scanner.rb --zone_file_directory=/path/to/zone/files/ watch_term
 ```
 
+## Example Data
+We include some example data. To try it out, run:
+```bash
+ruby scanner.rb --zone_file_directory=tests/sample_data test
+```
+
 ## Rule File Format
 The rule file is a simple JSON file with an array of rules:
 ```json
@@ -50,6 +56,8 @@ def self.get_match_result(monitored_domain, suspect_domain)
     end
 end
 ```
+Also don't forget to change the name of the class! We have logic that will automatically load your new
+matcher if you name the file <your_name>_matcher.rb and stick it in lib/matchers/
 
 ## How to get zone files
 Zone files can be retrieved from ICANN's CZDS

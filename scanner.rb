@@ -9,6 +9,8 @@ require_relative "lib/options_parser"
 require_relative "lib/rule_file"
 require_relative "lib/zone_file_parser"
 
+MatcherManager.load_all_matchers
+
 # Parse the command line
 OptionsParser.parse(["--help"]) if ARGV.empty?
 options = OptionsParser.parse(ARGV)

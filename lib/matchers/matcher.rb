@@ -1,6 +1,6 @@
 # Template/Interface for a Domain Name Matcher
-require_relative 'match_result'
-require_relative 'matcher_manager'
+require_relative './match_result'
+require_relative './matcher_manager'
 
 class Matcher
 
