@@ -1,3 +1,8 @@
+# Copyright 2022-Present Intuitive Analytics Inc. DBA DomainAlarm
+# https://domainalarm.net | contact@domainalarm.net
+# This code is distributed under the GPL v3 License. Please see the LICENSE file
+# in the source repository for more information.
+
 require_relative './matcher'
 
 # Checks if the suspect domain includes the monitored domain

@@ -1,6 +1,8 @@
 # DomainAlarm's Zone File Phishing/Lookalike Scanner
 This tool scans zone files (preferably from ICANN's Centralized Zone Data Service)
-and finds potential lookalike/phishing domains for your watch term(s).
+and finds potential lookalike/phishing domains for your watch term(s). This tool is distributed by
+DomainAlarm (https://domainalarm.net) for the benefit of the public and is subject to the GPL v3
+License. For help or questions, please email contact@domainalarm.net
 
 ## Basic Use
 To use the tool, you'll need Ruby/Bundler (should be installed with most distros) and the following:

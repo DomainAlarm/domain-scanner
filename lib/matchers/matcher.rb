@@ -1,3 +1,8 @@
+# Copyright 2022-Present Intuitive Analytics Inc. DBA DomainAlarm
+# https://domainalarm.net | contact@domainalarm.net
+# This code is distributed under the GPL v3 License. Please see the LICENSE file
+# in the source repository for more information.
+
 # Template/Interface for a Domain Name Matcher
 require_relative './match_result'
 require_relative './matcher_manager'
