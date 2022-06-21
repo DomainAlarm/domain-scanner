@@ -22,8 +22,13 @@ term as the last argument at the command line:
 ruby scanner.rb --zone_file_directory=/path/to/zone/files/ watch_term
 ```
 
-## Bundler
-To install the gems, run `bundle install`
+## Setup
+1. Start with a unix system with ruby and git installed
+2. Clone this repo: `git clone https://github.com/DomainAlarm/domain-scanner.git`
+3. Install bundler: `sudo gem install bundler`
+4. Install ruby dev tools: `sudo apt-get install ruby ruby-all-dev`
+5. Install rest of gems: `bundle install`
+6. Ensure you have the "file" command: `sudo apt install file`
 
 ## Example Data
 We include some example data. To try it out, run:
